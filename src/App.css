@@ -59,3 +59,13 @@ button:hover{
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
   }
+  @media(max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+    .card h1{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
