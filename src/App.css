@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.App{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./bgImage.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+    margin-top: 10rem;
+    border-radius: 40px;
+    width: 50rem;
+    height: 20rem;
+    background-color: rgb(44, 143, 218);
+    padding: 0rem 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h1{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.card button{
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    color: rgba(22, 76, 167, 0.6);
+    transition: all .4s ease-in;
+}
+button {
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
   }
+button:hover{
+    transform: scale(1.04);
+    animation: tilt-shaking 0.3s;
+    box-shadow: -2px 25px 110px -13px rgba(0,0,0,0.62);
+-webkit-box-shadow: -2px 25px 110px -13px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 25px 110px -13px rgba(0,0,0,0.62);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
