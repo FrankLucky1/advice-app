@@ -60,7 +60,11 @@ button:hover{
     100% { transform: rotate(0deg); }
   }
   @media(max-width: 600px) {
+      .App{
+          background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(47, 114, 168, 0.3) ), url('./bg.jpg');
+      }
     .card {
+        margin-top: 1rem;
         width: 80%;
         height: 30%;
     }
